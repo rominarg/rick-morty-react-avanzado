@@ -1,24 +1,27 @@
-import logo from './logo.svg';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap";
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 className="text-center">Ricky and Morty Span . </h1> 
+      <div class="container">
+  <div class="row">
+    <div class="col-3">
+      One of three columns
     </div>
+    <div class="col-8">
+      One of three columns
+    </div>
+
+  </div>
+</div>
+    </div>
+    
+
+
+
   );
 }
 
