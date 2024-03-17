@@ -5,18 +5,17 @@ import React, { useState, useEffect } from "react";
 import Search from "./components/Search/Search";
 import Card from "./components/Card/Card";
 import Pagination from "./components/Pagination/Pagination";
-import Filter from "./components/Filters/Filter";
+import Filter from "./components/Filter/Filter";
 import Navbar from "./components/Navbar/Navbar";
 
-
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Episodes from "./Pages/Episodes";
 import Location from "./Pages/Location";
 import CardDetails from "./components/Card/CardDetails";
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <div className="App">
         <Navbar />
       </div>
@@ -30,7 +29,7 @@ function App() {
         <Route path="/location" element={<Location />} />
         <Route path="/location/:id" element={<CardDetails />} />
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 }
 
